@@ -313,27 +313,26 @@ sup {
 <p>The experimental results can be downloaded from the following link.<br>
 <a href="./file/leo.results.zip">Download</a>   </p>
 
-<p>ReadMe(This is from another project): </p>
+<p>ReadMe: </p>
 
-<p>After downloading, there are two folders in the package: gcc and llvm   </p>
+<p>After downloading, there are two folders in the package: data and source   </p>
 
-<p>For gcc:   </p>
+<p>For data:   </p>
 
-<pre><code class="language-none">This folder saves the results of GCC:   
-    gcc-rdt.txt: save test programs (id) that trigger GCC bugs by RDT   
-    gcc-emi.txt: save test programs (id) that trigger GCC bugs by EMI   
-    gcc-dol.txt: save test programs (id) that trigger GCC bugs by DOL   
-    gcc-correcting-commits.csv: the correcting commit for each test program   
-        test program (id), the correcting commit (id)   </code></pre>
+<pre><code class="language-none">This folder saves the results of our experiments:   
+    Comparison.xlsx: saves comparison results among LEO, ALL and NO   
+    LEO-A/B/C/D.csv: saves the results of LEO&#39;s four variants   
+    Machine-learning.xlsx: saves the results of LEO with different machine learning algorithms  
+    lib-prediction: saves the prediction results of the libraries each subject used
+    method-prediction: saves the prediction results of each method in each subject</code></pre>
 
-<p>For llvm:   </p>
+<p>For source:   </p>
 
-<pre><code class="language-none">This folder saves the results of LLVM:   
-    llvm-rdt.txt: save test programs (id) that trigger LLVM bugs by RDT   
-    llvm-emi.txt: save test programs (id) that trigger LLVM bugs by EMI   
-    llvm-dol.txt: save test programs (id) that trigger LLVM bugs by DOL   
-    llvm-correcting-commits.csv: the correcting commit for each test program   
-        test program (id), the correcting commit (id)       </code></pre>
+<pre><code class="language-none">This folder saves the code of our implementations:   
+    predicttest-smo-31-smote-new.jar &amp; predicttest-smo-31-smote-trained.jar: implement SMOTE and SMO algorithms
+    predict_method.py: implements to predict the compiler optimization settings for each method in each subject
+    predict_lib.py: implements to predict the compiler optimization settings for the libraries each subject used
+    runklee.py: implements to apply our prediction results to analyze each subject using KLEE               </code></pre>
 
 
 </body>
