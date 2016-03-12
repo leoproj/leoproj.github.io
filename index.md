@@ -29,3 +29,7 @@ For source:
 		predict_method.py: implements to predict the compiler optimization settings for each method in each subject
 		predict_lib.py: implements to predict the compiler optimization settings for the libraries each subject used
 		runklee.py: implements to apply our prediction results to analyze each subject using KLEE   		 	
+		
+###<h2 id="1"> Experiment Setup </h2>
+Following link leads to a part of the source code in our experiment including the splitor for c programs, and the scripts to perform optimization.  
+[Download](./file/experi-setup.zip)
