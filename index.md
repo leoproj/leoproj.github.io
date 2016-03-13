@@ -4,8 +4,8 @@ Learning to Tune Compiler Optimizations for Symbolic Execution Acceleration
 
 ###<h2 id="1"> Data </h2>
 
-The experimental results can be downloaded from the following link.   
-[Download](./file/leo.results.zip)   
+The experimental data and source can be downloaded from the following link.   
+[Download](./file/leo.zip)   
 
 
 ReadMe: 
@@ -28,8 +28,6 @@ For source:
 		predicttest-smo-31-smote-new.jar & predicttest-smo-31-smote-trained.jar: implement SMOTE and SMO algorithms
 		predict_method.py: implements to predict the compiler optimization settings for each method in each subject
 		predict_lib.py: implements to predict the compiler optimization settings for the libraries each subject used
-		runklee.py: implements to apply our prediction results to analyze each subject using KLEE   		 	
+		runklee.py: implements to apply our prediction results to analyze each subject using KLEE  
+		splitter+optimizer: contains the implementations of the program-splitter and method-optimizer, and also contains corresponding scripts for using the tools 		 	
 		
-###<h2 id="1"> Experiment Setup </h2>
-Following link leads to a part of the source code in our experiment including the splitor for c programs, and the scripts to perform optimization.  
-[Download](./file/leo.experi-setup.zip)
